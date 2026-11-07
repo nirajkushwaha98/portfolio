@@ -1,0 +1,8 @@
+# Local tooling
+.claude/
+.vercel/
+.DS_Store
+
+# Source photos (the site uses assets/photo.png)
+assets/linkedin-photo.jpg
+assets/linkedin-photo-800.jpg

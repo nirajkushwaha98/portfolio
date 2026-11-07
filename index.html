@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Niraj Kushwaha — Full Stack AI Developer</title>
+  <meta name="description" content="Portfolio of Niraj Kushwaha — Full Stack AI Developer, MCA (AI &amp; ML) at Chandigarh University, founder of FileX and creator of VoiceMods." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css?v=33" />
+  <meta name="theme-color" content="#05060d" />
+  <script>
+    // Apply saved theme before first paint (default: futuristic dark)
+    (function () {
+      var t = "dark";
+      try { t = localStorage.getItem("nk-theme") || "dark"; } catch (e) {}
+      document.documentElement.setAttribute("data-theme", t);
+    })();
+  </script>
+</head>
+<body>
+  <!-- Boot loader -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader-inner">
+      <span class="loader-logo">NK</span>
+      <div class="loader-bar"><i id="loaderBar"></i></div>
+      <span class="loader-txt" id="loaderTxt">INITIALIZING · 0%</span>
+      <div class="loader-log" id="loaderLog"></div>
+    </div>
+  </div>
+
+  <div class="progress" id="progress" aria-hidden="true"></div>
+  <canvas class="trail" id="trail" aria-hidden="true"></canvas>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cur-ring" id="curRing" aria-hidden="true"></div>
+  <div class="cur-dot" id="curDot" aria-hidden="true"></div>
+
+  <div class="glow" aria-hidden="true"></div>
+  <div class="grid-bg" aria-hidden="true"></div>
+
+  <!-- Top bar -->
+  <header class="topbar">
+    <a href="#home" class="brand">
+      <span class="mono-badge">NK</span>
+      <span class="brand-name">Niraj Kushwaha</span>
+    </a>
+    <nav class="nav" id="nav">
+      <span class="nav-ind" id="navInd" aria-hidden="true"></span>
+      <a href="#about" data-sec="about">About</a>
+      <a href="#skills" data-sec="skills">Skills</a>
+      <a href="#work" data-sec="work">Work</a>
+      <a href="#learning" data-sec="learning">Learning</a>
+      <a href="#experience" data-sec="experience">Experience</a>
+      <a href="#achievements" data-sec="achievements">Achievements</a>
+      <a href="#contact" data-sec="contact">Contact</a>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch light / dark theme">
+      <svg class="i-moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" fill="currentColor"/></svg>
+      <svg class="i-sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="4.5" fill="currentColor"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></g></svg>
+    </button>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <canvas class="hero-canvas" id="heroCanvas" aria-hidden="true"></canvas>
+      <div class="hud" aria-hidden="true">
+        <span class="hud-c tl"></span><span class="hud-c tr"></span><span class="hud-c bl"></span><span class="hud-c br"></span>
+        <span class="hud-t hud-t1">// PORTFOLIO_v2.0 — SYS.ONLINE — <span id="hudClock">--:--:--</span> IST</span>
+        <span class="hud-t hud-t2">30.77° N · 76.57° E — CHANDIGARH</span>
+      </div>
+      <div class="hero-floor" aria-hidden="true"><div class="plane"><i></i></div></div>
+      <div class="hero-bigname" data-text="NIRAJ" aria-hidden="true">NIRAJ</div>
+      <figure class="hero-photo">
+        <img id="heroPhoto" src="assets/photo.png?v=5" alt="Niraj Kushwaha" />
+      </figure>
+      <div class="hero-left reveal">
+        <p class="status-chip"><span class="live-dot"></span> Available for work · 2026</p>
+        <h1 class="hero-title"><span class="ht-line">Full Stack</span><br /><span class="ht-line">AI Developer</span><span class="dot">.</span></h1>
+        <p class="hero-sub">MCA (AI &amp; ML) · <span class="typed" id="typed">Deep learning</span><span class="caret" aria-hidden="true"></span></p>
+      </div>
+      <div class="hero-right reveal">
+        <a href="#work" class="btn btn-dark">Explore work <span>→</span></a>
+        <div class="hero-links">
+          <a href="#contact" class="btn btn-ghost">Let's talk</a>
+          <a href="https://github.com/nirajkushwaha98" target="_blank" rel="noopener" class="btn btn-ghost">GitHub ↗</a>
+        </div>
+      </div>
+      <div class="scroll-hint" aria-hidden="true"><span></span></div>
+    </section>
+
+    <!-- Tech ticker -->
+    <div class="marquee" aria-label="Technologies I use">
+      <div class="marquee-track" id="marquee"></div>
+    </div>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about">
+      <div class="about-text reveal">
+        <p class="sec-num">01 <span>About</span></p>
+        <h2 class="display">Hi, I'm <em>Niraj.</em></h2>
+        <p class="lead">
+          A <strong>full stack AI developer</strong> studying MCA (AI &amp; ML) at Chandigarh University.
+          I build <strong>machine-learning models</strong> and turn them into real products —
+          <strong>AI-powered web apps</strong>, data dashboards, Android utilities and C++ visualizers.
+          I enjoy the full journey: data, model, backend, interface, deploy.
+        </p>
+        <div class="about-actions">
+          <a href="#work" class="btn btn-dark">See projects <span>→</span></a>
+          <a href="https://github.com/nirajkushwaha98" target="_blank" rel="noopener" class="link-ul">GitHub ↗</a>
+          <a href="https://www.linkedin.com/in/niraj-kushwaha-0223b13a6" target="_blank" rel="noopener" class="link-ul">LinkedIn ↗</a>
+        </div>
+      </div>
+
+      <div class="lanyard-wrap">
+        <div class="lanyard" id="lanyard">
+          <div class="strap"><span>NIRAJ · DEV</span></div>
+          <div class="clip"></div>
+          <div class="idcard" id="idcard" role="button" tabindex="0" aria-pressed="false" aria-label="ID card — click to flip">
+            <div class="id-inner">
+              <!-- FRONT -->
+              <div class="id-face id-front">
+                <div class="id-head">
+                  <span class="mono-badge light">NK</span>
+                  <div>
+                    <b>DEVELOPER ID</b>
+                    <small>Portfolio · 2026</small>
+                  </div>
+                </div>
+                <div class="id-photo"><img src="assets/photo.png?v=5" alt="" /></div>
+                <div class="id-name">NIRAJ KUSHWAHA</div>
+                <div class="id-role">Full Stack AI Developer</div>
+                <div class="id-foot">
+                  <div><small>ID</small><b>NK-0098</b></div>
+                  <div><small>Repos</small><b id="idRepos">20+</b></div>
+                  <div class="barcode"></div>
+                </div>
+                <span class="flip-hint">Tap to flip ↻</span>
+              </div>
+              <!-- BACK -->
+              <div class="id-face id-back">
+                <div class="idb-top">
+                  <span class="mono-badge light">NK</span>
+                  <small>Back · Access pass</small>
+                </div>
+                <dl class="idb-list">
+                  <div><dt>University</dt><dd>Chandigarh University</dd></div>
+                  <div><dt>Course</dt><dd>MCA (AI &amp; ML)</dd></div>
+                  <div><dt>Founder</dt><dd>FileX</dd></div>
+                  <div><dt>Stack</dt><dd>Python · JS · C++</dd></div>
+                  <div><dt>Valid</dt><dd>Always building</dd></div>
+                </dl>
+                <div class="idb-links">
+                  <a href="https://github.com/nirajkushwaha98" target="_blank" rel="noopener">GitHub ↗</a>
+                  <a href="https://www.linkedin.com/in/niraj-kushwaha-0223b13a6" target="_blank" rel="noopener">LinkedIn ↗</a>
+                  <a href="https://filex.lol/" target="_blank" rel="noopener">FileX ↗</a>
+                  <a href="https://voicemods.lol/" target="_blank" rel="noopener">VoiceMods ↗</a>
+                </div>
+                <div class="idb-bottom">
+                  <div class="qr" aria-hidden="true"></div>
+                  <div class="idb-sign"><span>Niraj</span><small>Signature</small></div>
+                </div>
+                <span class="flip-hint">Tap to flip back ↻</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <dl class="about-facts reveal">
+        <div><dt>Studying</dt><dd>MCA (AI &amp; ML) · Chandigarh University</dd></div>
+        <div><dt>Founder</dt><dd><a href="https://filex.lol/" target="_blank" rel="noopener" class="link-ul">FileX ↗</a></dd></div>
+        <div><dt>Creator</dt><dd><a href="https://voicemods.lol/" target="_blank" rel="noopener" class="link-ul">VoiceMods ↗</a> · Hindi AI voiceovers</dd></div>
+        <div><dt>Role</dt><dd>Full Stack AI Developer</dd></div>
+        <div><dt>Building</dt><dd>Web apps, ML models &amp; Unity games</dd></div>
+        <div><dt>Stack</dt><dd>Python · JS · C++ · SQL</dd></div>
+        <div><dt>Deploys</dt><dd>Vercel · Streamlit</dd></div>
+        <div><dt>Status</dt><dd><span class="live-dot"></span> Open to opportunities</dd></div>
+        <p class="quote">“From the dataset to the deployed app.”</p>
+      </dl>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section skills">
+      <div class="sec-head reveal">
+        <p class="sec-num">02 <span>Skills</span></p>
+        <h2 class="display">The periodic table <em>of my stack.</em></h2>
+        <p class="muted">Elements in six families. Hover a tile to see its details, or pick a family to light it up.</p>
+      </div>
+      <div class="chips" id="chips"></div>
+      <div class="ptable-wrap">
+        <div class="ptable" id="ptable"></div>
+        <aside class="element-detail" id="elDetail">
+          <div class="el-row">
+            <div class="el-logo"></div>
+            <div class="el-big"><span class="el-num">—</span><span class="el-sym">?</span></div>
+          </div>
+          <h3 class="el-name">Hover a tile</h3>
+          <p class="el-fam muted">to inspect an element</p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section id="work" class="section work">
+      <div class="sec-head reveal">
+        <p class="sec-num">03 <span>Work</span></p>
+        <h2 class="display">Things I've <em>built.</em></h2>
+        <p class="muted">Selected projects from my GitHub. Click a panel to open it.</p>
+      </div>
+      <div class="accordion" id="accordion"></div>
+      <div class="center"><a href="https://github.com/nirajkushwaha98?tab=repositories" target="_blank" rel="noopener" class="btn btn-dark">View all on GitHub <span>↗</span></a></div>
+    </section>
+
+    <!-- LEARNING -->
+    <section id="learning" class="section learning">
+      <div class="learn-left reveal">
+        <p class="sec-num">04 <span>Learning</span></p>
+        <h2 class="display">Certified &amp; still <em>learning.</em></h2>
+        <p class="muted">Certifications from Oracle, AWS, ISRO and DeepLearning.AI — and what I'm studying next. Hover a row.</p>
+      </div>
+      <ul class="learn-list" id="learnList"></ul>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section experience">
+      <div class="sec-head reveal">
+        <p class="sec-num">05 <span>Journey</span></p>
+        <h2 class="display">Education &amp; <em>experience.</em></h2>
+      </div>
+      <div class="timeline" id="timeline"></div>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section id="achievements" class="section achievements">
+      <div class="sec-head reveal">
+        <p class="sec-num">06 <span>Achievements</span></p>
+        <h2 class="display">Proud <em>moments.</em></h2>
+      </div>
+      <div class="stats" id="stats"></div>
+    </section>
+
+    <!-- LINKEDIN POSTS (hidden until POSTS in script.js has entries) -->
+    <section id="posts" class="section posts" hidden>
+      <div class="sec-head reveal">
+        <p class="sec-num">07 <span>Posts</span></p>
+        <h2 class="display">From my <em>LinkedIn.</em></h2>
+        <p class="muted">Things I've shared — projects, learnings and milestones.</p>
+      </div>
+      <div class="post-grid" id="postGrid"></div>
+      <div class="center"><a href="https://www.linkedin.com/in/niraj-kushwaha-0223b13a6/recent-activity/all/" target="_blank" rel="noopener" class="btn btn-dark">All posts on LinkedIn <span>↗</span></a></div>
+    </section>
+
+    <!-- TERMINAL -->
+    <section id="terminal" class="section terminal-sec">
+      <div class="sec-head reveal">
+        <p class="sec-num">08 <span>Terminal</span></p>
+        <h2 class="display">Talk to my <em>terminal.</em></h2>
+        <p class="muted">Type <code>help</code> and press Enter — try <code>projects</code>, <code>skills</code>, <code>cd work</code> or <code>sudo hire-niraj</code>. Press <kbd>`</kbd> anywhere to jump here.</p>
+      </div>
+      <div class="term reveal" id="term">
+        <div class="term-bar"><span></span><span></span><span></span><b>niraj@portfolio: ~</b></div>
+        <div class="term-body" id="termBody" role="log" aria-live="polite"></div>
+        <form class="term-input" id="termForm" autocomplete="off">
+          <label for="termIn" class="term-prompt">niraj@portfolio:~$</label>
+          <input id="termIn" type="text" spellcheck="false" autocapitalize="off" autocorrect="off" enterkeyhint="send" aria-label="Terminal command" />
+        </form>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <p class="sec-num reveal" id="contactNum">07 <span>Contact</span></p>
+      <h2 class="contact-title reveal">Let's build<br /><span class="fade-text">something together.</span></h2>
+      <p class="muted reveal">Have a project, internship or idea? My inbox is open.</p>
+      <div class="contact-links reveal">
+        <a href="https://www.linkedin.com/in/niraj-kushwaha-0223b13a6" target="_blank" rel="noopener" class="contact-card">
+          <small>LinkedIn</small><b>niraj-kushwaha</b><span>↗</span>
+        </a>
+        <a href="https://github.com/nirajkushwaha98" target="_blank" rel="noopener" class="contact-card">
+          <small>GitHub</small><b>@nirajkushwaha98</b><span>↗</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© <span id="year"></span> Niraj Kushwaha</span>
+    <a href="#home">Back to top ↑</a>
+  </footer>
+
+  <a href="#terminal" class="fab" id="fab" aria-label="Open the portfolio terminal">&gt;_</a>
+
+  <script src="script.js?v=37"></script>
+</body>
+</html>
