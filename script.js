@@ -113,7 +113,7 @@ const PROJECTS = [
     feats: ["Hindi/English voice AI", "Reminders & expenses", "Offline-first + sync", "Secure Gemini backend"],
     stack: ["Kotlin", "Jetpack Compose", "Firebase", "Gemini"],
     repo: "lifeos-ai",
-    post: LI + "7524797682872147968/",
+    post: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7524803680622051328/",
     soon: "Coming soon on Google Play",
     logo: "assets/logos/lifeos.png", glow: "99, 102, 241",
     // Emulator captures (403×900)
@@ -276,7 +276,7 @@ const STATS = [
 // The section stays hidden until at least one post is added.
 // { date: "Oct 2026", title: "Short headline", text: "First line or two of the post", url: "https://www.linkedin.com/posts/...", tag: "Project" }
 const POSTS = [
-  { date: "Nov 7, 2026", tag: "Launch", title: "Introducing LifeOS AI — your everyday life, smarter", text: "An offline-first Android super-app for tasks, reminders, expenses, notes and documents, with an AI assistant and a hands-free Hindi/English voice mode. Kotlin · Jetpack Compose · Firebase · Gemini.", url: LI + "7524797682872147968/" },
+  { date: "Nov 7, 2026", tag: "Launch", title: "Introducing LifeOS AI — your everyday life, smarter", text: "An offline-first Android super-app for tasks, reminders, expenses, notes and documents, with an AI assistant and a hands-free Hindi/English voice mode. Kotlin · Jetpack Compose · Firebase · Gemini.", url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7524803680622051328/" },
   { date: "Oct 29, 2026", tag: "Launch", title: "Introducing FileX — from idea to reality", text: "A desktop file conversion app for macOS and Windows: format conversion, batch conversion and offline, privacy-focused processing. Built and launched as Founder & Developer.", url: LI + "7521629144384954368/" },
   { date: "Oct 28, 2026", tag: "Coming soon", title: "FramShot — a sneak peek", text: "Previewing FramShot, a product I'm building to make screen recording more convenient and engaging. Asking the community which features matter most before launch.", url: LI + "7521224831930126336/" },
   { date: "Sep 6, 2026", tag: "Project", title: "Built a Placement Preparation Portal", text: "One platform for company-specific aptitude tests, DSA practice, ATS resume analysis, AI mock interviews and a Placement Readiness Index. React · Django REST · PostgreSQL · NLP.", url: LI + "7502433886958964736/" },
