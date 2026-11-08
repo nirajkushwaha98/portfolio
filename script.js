@@ -601,13 +601,16 @@ let particleColor = fxRGB();
 
 // ---------- Theme toggle (dark = futuristic, light = classic cream) ----------
 const metaTheme = document.querySelector('meta[name="theme-color"]');
-function applyTheme(t) {
+// Default is light (day mode); only an explicit toggle is remembered.
+function applyTheme(t, remember = true) {
   root.setAttribute("data-theme", t);
-  try { localStorage.setItem("nk-theme", t); } catch (e) { /* storage blocked — theme still applies */ }
+  if (remember) {
+    try { localStorage.setItem("nk-theme-choice", t); } catch (e) { /* storage blocked: theme still applies */ }
+  }
   if (metaTheme) metaTheme.content = t === "dark" ? "#05060d" : "#f5f2e8";
   particleColor = fxRGB();
 }
-applyTheme(isDark() ? "dark" : "light");
+applyTheme(isDark() ? "dark" : "light", false);
 $("#themeToggle").addEventListener("click", () => applyTheme(isDark() ? "light" : "dark"));
 
 // ---------- Boot loader ----------
