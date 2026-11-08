@@ -146,7 +146,8 @@ const PROJECTS = [
     feats: ["Aptitude & DSA practice", "ATS resume analysis", "AI mock interviews", "Readiness Index"],
     stack: ["React", "Django REST", "PostgreSQL", "NLP"],
     repo: "Portal",
-    badge: ["REACT", "WEB"],
+    live: "https://placement-preparation-portal-woad.vercel.app/",
+    badge: ["LIVE", "WEB"],
     viz: "bars",
   },
   {
@@ -262,7 +263,7 @@ const TIMELINE = [
   { year: "2026", tt: "Game dev", title: "Built Indian Traffic Rush in Unity", desc: "An endless 3D traffic-racing game for Android with a garage, daily missions, rewards and a procedurally generated Indian highway — backed by 28 automated tests.", pill: "Unity 6 · C# · Android" },
   { year: "2026", tt: "Android", title: "Built LifeOS AI, an everyday super-app", desc: "Offline-first Kotlin + Jetpack Compose app for tasks, reminders, expenses, notes and documents, with a Hindi/English AI voice assistant on a secure Gemini backend.", pill: "Kotlin · Compose · Firebase · AI" },
   { year: "2026", tt: "Certifications", title: "10 certifications in AI & cloud", desc: "Oracle OCI AI and Agentic AI Foundations, AWS Academy Cloud & Generative AI Foundations, NLP with Attention Models (DeepLearning.AI), AIML for Geodata Analytics (ISRO) and AI Product Engineering (Euron).", pill: "Oracle · AWS · ISRO · Coursera" },
-  { year: "2026", tt: "Projects", title: "AI apps, deep learning & web", desc: "AI Quiz Generator, PDF RAG Q&A, advanced stock prediction, fake-news detection, Toolkit Pro Android app a placement portal and a live React job portal.", pill: "AI · Full stack · Android" },
+  { year: "2026", tt: "Projects", title: "AI apps, deep learning & web", desc: "AI Quiz Generator, PDF RAG Q&A, advanced stock prediction, fake-news detection, Toolkit Pro Android app a placement portal a live placement portal and a live React job portal.", pill: "AI · Full stack · Android" },
 ];
 
 const STATS = [
