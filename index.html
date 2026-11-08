@@ -24,12 +24,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css?v=33" />
-  <meta name="theme-color" content="#05060d" />
+  <meta name="theme-color" content="#f5f2e8" />
   <script>
-    // Apply saved theme before first paint (default: futuristic dark)
+    // Apply the visitor's chosen theme before first paint (default: light day mode)
     (function () {
-      var t = "dark";
-      try { t = localStorage.getItem("nk-theme") || "dark"; } catch (e) {}
+      var t = "light";
+      try { t = localStorage.getItem("nk-theme-choice") || "light"; } catch (e) {}
       document.documentElement.setAttribute("data-theme", t);
     })();
   </script>
@@ -307,6 +307,6 @@
 
   <a href="#terminal" class="fab" id="fab" aria-label="Open the portfolio terminal">&gt;_</a>
 
-  <script src="script.js?v=38"></script>
+  <script src="script.js?v=39"></script>
 </body>
 </html>
