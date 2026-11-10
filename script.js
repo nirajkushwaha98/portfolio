@@ -270,7 +270,7 @@ const STATS = [
   ["📦", 22, "", "Public GitHub repositories"],
   ["🚀", 2, "", "Products launched — FileX & VoiceMods"],
   ["🎓", 10, "", "Certifications — Oracle, AWS, ISRO, Coursera"],
-  ["🤝", 2600, "+", "LinkedIn followers"],
+  ["🤝", 2700, "+", "LinkedIn connections & followers"],
 ];
 
 // LinkedIn posts — on LinkedIn click "…" on a post → "Copy link to post", paste below.
