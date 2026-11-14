@@ -123,6 +123,17 @@ const PROJECTS = [
     viz: "nodes",
   },
   {
+    name: "TypeMind",
+    logo: "assets/logos/typemind.png", glow: "79, 70, 229",
+    tags: "macOS · AI · Productivity",
+    desc: "A native macOS app (macOS 14+) that brings on-device AI to your typing, with a local model and a private style memory that stays on your Mac.",
+    feats: ["Native macOS app", "On-device local model", "Personal style memory", "Private by design"],
+    stack: ["Swift", "macOS", "On-device AI"],
+    download: "https://drive.google.com/file/d/12vu7dEGF45GocOvxZaMafarrwqQE7SAM/view?usp=sharing",
+    badge: ["AI", "MAC"],
+    viz: "nodes",
+  },
+  {
     name: "AI Quiz Generator",
     logo: "assets/logos/quiz.svg", glow: "124, 58, 237",
     // UI of the repo's index.html, shown with sample questions
@@ -389,6 +400,7 @@ acc.innerHTML = PROJECTS.map((p, i) => `
         <div class="p-links">
           ${p.live ? `<a class="btn btn-dark" href="${p.live}" target="_blank" rel="noopener">Live demo <span>↗</span></a>` : ""}
           ${p.repo ? `<a class="btn ${p.live ? "btn-ghost" : "btn-dark"}" href="${GH + encodeURIComponent(p.repo)}" target="_blank" rel="noopener">View on GitHub <span>↗</span></a>` : ""}
+          ${p.download ? `<a class="btn btn-dark" href="${p.download}" target="_blank" rel="noopener">Download for macOS <span>↗</span></a>` : ""}
           ${p.post ? `<a class="btn btn-ghost" href="${p.post}" target="_blank" rel="noopener">LinkedIn post <span>↗</span></a>` : ""}
           ${p.soon ? `<span class="p-soon"><i aria-hidden="true"></i>${esc(p.soon)}</span>` : ""}
         </div>
