@@ -130,6 +130,8 @@ const PROJECTS = [
     feats: ["Real-time autocomplete", "Gemini and Qwen models", "Accept with Tab", "Fewer repetitive keystrokes"],
     stack: ["macOS", "Gemini", "Qwen", "AI Autocomplete"],
     download: "https://drive.google.com/file/d/12vu7dEGF45GocOvxZaMafarrwqQE7SAM/view?usp=sharing",
+    shots: ["assets/games/typemind-setup.jpg", "assets/games/typemind-general.jpg"],
+    frame: "browser", ratio: "1998 / 1296",
     badge: ["AI", "MAC"],
     viz: "nodes",
   },
