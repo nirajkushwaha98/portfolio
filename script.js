@@ -84,8 +84,9 @@ const PROJECTS = [
     tags: "Product · AI Voice · SaaS",
     desc: "A Hindi-first AI voiceover studio that I built and launched — paste a script, audition Indian voices and download natural speech for videos, lessons and stories.",
     feats: ["Hindi text-to-speech", "Preview voices first", "WAV, MP3 & OGG export", "Accounts & private history"],
-    stack: ["Next.js", "Supabase", "Google WaveNet", "Gnani AI"],
+    stack: ["Next.js", "Supabase", "Gnani AI", "Dodo Payments"],
     live: "https://voicemods.lol/",
+    post: "https://www.linkedin.com/feed/update/urn:li:activity:7528165880338206720/",
     logo: "assets/logos/voicemods.svg", glow: "23, 132, 145",
     shots: ["assets/games/voicemods-home.jpg", "assets/games/voicemods-pricing.jpg"],
     frame: "browser", ratio: "16 / 10",
@@ -291,6 +292,7 @@ const STATS = [
 // The section stays hidden until at least one post is added.
 // { date: "Oct 2026", title: "Short headline", text: "First line or two of the post", url: "https://www.linkedin.com/posts/...", tag: "Project" }
 const POSTS = [
+  { date: "Nov 17, 2026", tag: "Launch", title: "I launched VoiceMods, a Hindi voiceover tool", text: "Paste a script, pick one of 13 Indian voices across 10 languages and download WAV, MP3 or OGG. The free plan gives 10,000 characters with no card. Next.js · Supabase · Gnani AI.", url: LI + "7528165880338206720/" },
   { date: "Nov 7, 2026", tag: "Launch", title: "Introducing LifeOS AI — your everyday life, smarter", text: "An offline-first Android super-app for tasks, reminders, expenses, notes and documents, with an AI assistant and a hands-free Hindi/English voice mode. Kotlin · Jetpack Compose · Firebase · Gemini.", url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7524803680622051328/" },
   { date: "Oct 29, 2026", tag: "Launch", title: "Introducing FileX — from idea to reality", text: "A desktop file conversion app for macOS and Windows: format conversion, batch conversion and offline, privacy-focused processing. Built and launched as Founder & Developer.", url: LI + "7521629144384954368/" },
   { date: "Oct 28, 2026", tag: "Coming soon", title: "FramShot — a sneak peek", text: "Previewing FramShot, a product I'm building to make screen recording more convenient and engaging. Asking the community which features matter most before launch.", url: LI + "7521224831930126336/" },
