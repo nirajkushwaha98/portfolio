@@ -262,6 +262,7 @@ const LEARNING = [
   ["Zero-to-Production: AI Product Engineering", "Euron · Aug 2026", "Certified"],
   ["AWS Academy Cloud Foundations", "Amazon Web Services · Aug 2026", "Certified"],
   ["AWS Academy Generative AI Foundations", "Amazon Web Services · Feb 2026", "Certified"],
+  ["Creating Change through Social Entrepreneurship", "United Latino Students Association · 2026", "Certified"],
   ["HackUrK!a-II hackathon", "GDG on Campus MM(DU) · Feb 2026", "Participated"],
   ["Interviewing Skills & Organizational Communication", "Saylor Academy · Feb 2026", "Certified"],
   ["Generative AI, agents & deep learning", "RAG, agentic workflows, PyTorch & TensorFlow", "Learning"],
@@ -275,15 +276,15 @@ const TIMELINE = [
   { year: "2026", tt: "Founder", title: "Launched FileX & VoiceMods, building FramShot", desc: "Founded and shipped FileX, a Mac & Windows file converter (filex.lol), launched VoiceMods, a Hindi AI voiceover studio (voicemods.lol), and started building FramShot, a screen recording tool. Earned the AWS Academy Cloud Foundations badge.", pill: "Product · Founder · AWS" },
   { year: "2026", tt: "Game dev", title: "Built Indian Traffic Rush in Unity", desc: "An endless 3D traffic-racing game for Android with a garage, daily missions, rewards and a procedurally generated Indian highway — backed by 28 automated tests.", pill: "Unity 6 · C# · Android" },
   { year: "2026", tt: "Android", title: "Built LifeOS AI, an everyday super-app", desc: "Offline-first Kotlin + Jetpack Compose app for tasks, reminders, expenses, notes and documents, with a Hindi/English AI voice assistant on a secure Gemini backend.", pill: "Kotlin · Compose · Firebase · AI" },
-  { year: "2026", tt: "Certifications", title: "10 certifications in AI & cloud", desc: "Oracle OCI AI and Agentic AI Foundations, AWS Academy Cloud & Generative AI Foundations, NLP with Attention Models (DeepLearning.AI), AIML for Geodata Analytics (ISRO) and AI Product Engineering (Euron).", pill: "Oracle · AWS · ISRO · Coursera" },
+  { year: "2026", tt: "Certifications", title: "13 certifications in AI & cloud", desc: "Oracle OCI AI and Agentic AI Foundations, AWS Academy Cloud & Generative AI Foundations, NLP with Attention Models (DeepLearning.AI), AIML for Geodata Analytics (ISRO) and AI Product Engineering (Euron).", pill: "Oracle · AWS · ISRO · Coursera" },
   { year: "2026", tt: "Projects", title: "AI apps, deep learning & web", desc: "AI Quiz Generator, PDF RAG Q&A, advanced stock prediction, fake-news detection, Toolkit Pro Android app a placement portal a live placement portal and a live React job portal.", pill: "AI · Full stack · Android" },
 ];
 
 const STATS = [
   ["📦", 22, "", "Public GitHub repositories"],
   ["🚀", 2, "", "Products launched — FileX & VoiceMods"],
-  ["🎓", 10, "", "Certifications — Oracle, AWS, ISRO, Coursera"],
-  ["🤝", 2700, "+", "LinkedIn connections & followers"],
+  ["🎓", 13, "", "Certifications — Oracle, AWS, ISRO, Coursera"],
+  ["🤝", 2800, "+", "LinkedIn followers"],
 ];
 
 // LinkedIn posts — on LinkedIn click "…" on a post → "Copy link to post", paste below.
