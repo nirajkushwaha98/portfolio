@@ -14,29 +14,22 @@ const FAMILIES = [
 ];
 
 // [symbol, name, family, note]
-// Only the important skills (28 = 4 rows of 7 on desktop, 7 rows of 4 on mobile) — each backed by a real project or certificate.
+// Only the important skills — each backed by a real project or certificate.
 const ELEMENTS = [
   ["Py", "Python", "lang", "My main language for ML, data analysis and backend scripts."],
   ["C++", "C++", "lang", "DSA practice and the SFML pathfinding visualizer."],
-  ["C#", "C#", "lang", "Gameplay, physics and UI code for Indian Traffic Rush."],
   ["Js", "JavaScript", "lang", "Interactive web apps and portals deployed on Vercel."],
-  ["Ts", "TypeScript", "lang", "Typed code for safer, cleaner apps."],
-  ["Sq", "SQL", "lang", "Queries and schema design for relational databases."],
   ["Ht", "HTML5", "front", "Semantic, accessible page structure."],
   ["Cs", "CSS3", "front", "Layouts, animation and responsive design."],
   ["Re", "React", "front", "Frontend of the placement preparation portal."],
   ["Nx", "Next.js", "front", "Full stack React framework behind VoiceMods (voicemods.lol)."],
-  ["St", "Streamlit", "front", "Fast data apps and ML dashboards."],
   ["Dj", "Django REST", "back", "Backend APIs for the placement preparation portal."],
   ["Ap", "REST APIs", "back", "Connecting frontends to models and data."],
   ["Sb", "Supabase", "back", "Auth & database behind VoiceMods accounts and private history."],
-  ["Pd", "Pandas", "data", "Cleaning, joining and analysing datasets."],
-  ["Np", "NumPy", "data", "Numerical computing foundation."],
   ["My", "MySQL", "data", "Online shopping DBMS and analytics backend."],
   ["Pg", "PostgreSQL", "data", "Relational database behind the placement portal."],
   ["Sk", "Scikit-learn", "ml", "Classification & regression — student performance, fake news."],
   ["Tf", "TensorFlow", "ml", "Deep learning: LSTM, GRU, BiLSTM, CNN-LSTM."],
-  ["Xg", "XGBoost", "ml", "Gradient boosting & ensembles for stock prediction."],
   ["Nl", "NLP", "ml", "Text processing for fake-news detection and AI mock interviews."],
   ["Rg", "RAG", "ml", "PDF question answering with retrieval-augmented generation."],
   ["Ll", "LLMs", "ml", "AI quiz generation and the LifeOS AI assistant (Gemini, with model fallback)."],
@@ -275,7 +268,7 @@ const TIMELINE = [
   { year: "2019–23", tt: "Education", title: "BCA — BRABU, Muzaffarpur", desc: "Bachelor of Computer Applications (Computer Software Engineering) at Babasaheb Bhimrao Ambedkar Bihar University: programming, databases, web technologies and application development.", pill: "Grade 71%" },
   { year: "2025–27", tt: "Education", title: "MCA (AI & ML) — Chandigarh University", desc: "Master of Computer Applications with Artificial Intelligence & Machine Learning and mobile app development (Jul 2025 – Dec 2027). Building full stack AI products alongside coursework.", pill: "AI & ML specialisation" },
   { year: "2025", tt: "Projects", title: "Started building with ML", desc: "Student Performance Predictor, personalized e-commerce recommendations, Dijkstra shortest path for Varanasi and an online shopping DBMS.", pill: "Python · ML · SQL" },
-  { year: "2026", tt: "Founder", title: "Launched FileX, VoiceMods & TypeMind", desc: "Founded and shipped FileX, a Mac & Windows file converter (filex.lol), launched VoiceMods, a Hindi AI voiceover studio (voicemods.lol), launched TypeMind, on-device AI autocomplete for Mac (typemind.lol), and started building FramShot, a screen recording tool. Earned the AWS Academy Cloud Foundations badge.", pill: "Product · Founder · AWS" },
+  { year: "2026", tt: "Founder", title: "Launched FileX, VoiceMods & TypeMind", desc: "Founded and shipped three products: FileX, a Mac & Windows file converter (filex.lol), VoiceMods, a Hindi AI voiceover studio (voicemods.lol), and TypeMind, on-device AI autocomplete for Mac (typemind.lol). Also started building FramShot, a screen recording tool. Earned the AWS Academy Cloud Foundations badge.", pill: "Product · Founder · AWS" },
   { year: "2026", tt: "Game dev", title: "Built Indian Traffic Rush in Unity", desc: "An endless 3D traffic-racing game for Android with a garage, daily missions, rewards and a procedurally generated Indian highway — backed by 28 automated tests.", pill: "Unity 6 · C# · Android" },
   { year: "2026", tt: "Android", title: "Built LifeOS AI, an everyday super-app", desc: "Offline-first Kotlin + Jetpack Compose app for tasks, reminders, expenses, notes and documents, with a Hindi/English AI voice assistant on a secure Gemini backend.", pill: "Kotlin · Compose · Firebase · AI" },
   { year: "2026", tt: "Certifications", title: "13 certifications in AI & cloud", desc: "Oracle OCI AI and Agentic AI Foundations, AWS Academy Cloud & Generative AI Foundations, NLP with Attention Models (DeepLearning.AI), AIML for Geodata Analytics (ISRO) and AI Product Engineering (Euron).", pill: "Oracle · AWS · ISRO · Coursera" },
@@ -708,7 +701,7 @@ if (finePointer && !reduceMotion) {
 (function typer() {
   const el = $("#typed");
   if (!el || reduceMotion) return;
-  const words = ["Deep learning", "LLM & RAG apps", "React + Django", "Founder @ FileX", "Creator @ VoiceMods", "Unity 3D games", "Data dashboards"];
+  const words = ["Deep learning", "LLM & RAG apps", "React + Django", "Founder @ FileX", "Founder @ VoiceMods", "Founder @ TypeMind", "Unity 3D games", "Data dashboards"];
   let w = 0, i = words[0].length, del = true;
   const tick = () => {
     const word = words[w];
@@ -909,7 +902,7 @@ if (finePointer && !reduceMotion) {
       out([
         '<span class="t-acc">Niraj Kushwaha</span>',
         "MCA (AI & ML) @ Chandigarh University",
-        "Full Stack AI Developer · Founder of FileX · Creator of VoiceMods",
+        "Full Stack AI Developer · Founder of FileX, VoiceMods & TypeMind",
         '<span class="t-dim">“From the dataset to the deployed app.”</span>',
       ].join("\n"));
     },
