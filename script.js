@@ -131,6 +131,7 @@ const PROJECTS = [
     feats: ["Works in most Mac apps", "On-device AI, works offline", "Accept with Tab", "Free plan, no card needed"],
     stack: ["macOS", "Gemma 3", "Qwen 3", "On-device AI"],
     live: "https://typemind.lol/",
+    post: LI + "7529482394270322689/",
     shots: ["assets/games/typemind-setup.jpg", "assets/games/typemind-general.jpg"],
     frame: "browser", ratio: "1998 / 1296",
     badge: ["AI", "MAC"],
@@ -274,24 +275,26 @@ const TIMELINE = [
   { year: "2019–23", tt: "Education", title: "BCA — BRABU, Muzaffarpur", desc: "Bachelor of Computer Applications (Computer Software Engineering) at Babasaheb Bhimrao Ambedkar Bihar University: programming, databases, web technologies and application development.", pill: "Grade 71%" },
   { year: "2025–27", tt: "Education", title: "MCA (AI & ML) — Chandigarh University", desc: "Master of Computer Applications with Artificial Intelligence & Machine Learning and mobile app development (Jul 2025 – Dec 2027). Building full stack AI products alongside coursework.", pill: "AI & ML specialisation" },
   { year: "2025", tt: "Projects", title: "Started building with ML", desc: "Student Performance Predictor, personalized e-commerce recommendations, Dijkstra shortest path for Varanasi and an online shopping DBMS.", pill: "Python · ML · SQL" },
-  { year: "2026", tt: "Founder", title: "Launched FileX & VoiceMods, building FramShot", desc: "Founded and shipped FileX, a Mac & Windows file converter (filex.lol), launched VoiceMods, a Hindi AI voiceover studio (voicemods.lol), and started building FramShot, a screen recording tool. Earned the AWS Academy Cloud Foundations badge.", pill: "Product · Founder · AWS" },
+  { year: "2026", tt: "Founder", title: "Launched FileX, VoiceMods & TypeMind", desc: "Founded and shipped FileX, a Mac & Windows file converter (filex.lol), launched VoiceMods, a Hindi AI voiceover studio (voicemods.lol), launched TypeMind, on-device AI autocomplete for Mac (typemind.lol), and started building FramShot, a screen recording tool. Earned the AWS Academy Cloud Foundations badge.", pill: "Product · Founder · AWS" },
   { year: "2026", tt: "Game dev", title: "Built Indian Traffic Rush in Unity", desc: "An endless 3D traffic-racing game for Android with a garage, daily missions, rewards and a procedurally generated Indian highway — backed by 28 automated tests.", pill: "Unity 6 · C# · Android" },
   { year: "2026", tt: "Android", title: "Built LifeOS AI, an everyday super-app", desc: "Offline-first Kotlin + Jetpack Compose app for tasks, reminders, expenses, notes and documents, with a Hindi/English AI voice assistant on a secure Gemini backend.", pill: "Kotlin · Compose · Firebase · AI" },
   { year: "2026", tt: "Certifications", title: "13 certifications in AI & cloud", desc: "Oracle OCI AI and Agentic AI Foundations, AWS Academy Cloud & Generative AI Foundations, NLP with Attention Models (DeepLearning.AI), AIML for Geodata Analytics (ISRO) and AI Product Engineering (Euron).", pill: "Oracle · AWS · ISRO · Coursera" },
-  { year: "2026", tt: "Projects", title: "AI apps, deep learning & web", desc: "AI Quiz Generator, PDF RAG Q&A, advanced stock prediction, fake-news detection, Toolkit Pro Android app a placement portal a live placement portal and a live React job portal.", pill: "AI · Full stack · Android" },
+  { year: "2026", tt: "Projects", title: "AI apps, deep learning & web", desc: "AI Quiz Generator, PDF RAG Q&A, advanced stock prediction, fake-news detection, the Toolkit Pro Android app, a live placement portal and a live React job portal.", pill: "AI · Full stack · Android" },
 ];
 
 const STATS = [
-  ["📦", 22, "", "Public GitHub repositories"],
-  ["🚀", 2, "", "Products launched — FileX & VoiceMods"],
+  ["📦", 23, "", "Public GitHub repositories"],
+  ["🚀", 3, "", "Products launched — FileX, VoiceMods & TypeMind"],
   ["🎓", 13, "", "Certifications — Oracle, AWS, ISRO, Coursera"],
-  ["🤝", 3114, "", "LinkedIn connections, 2,800+ followers"],
+  ["🤝", 3114, "", "LinkedIn connections, 3,100+ followers"],
 ];
 
 // LinkedIn posts — on LinkedIn click "…" on a post → "Copy link to post", paste below.
 // The section stays hidden until at least one post is added.
 // { date: "Oct 2026", title: "Short headline", text: "First line or two of the post", url: "https://www.linkedin.com/posts/...", tag: "Project" }
 const POSTS = [
+  { date: "Nov 20, 2026", tag: "Launch", title: "I built TypeMind, AI autocomplete for Mac", text: "It suggests the next few words in Mail, Slack, Notes or your browser, and you press Tab to keep them. The model runs on your Mac and works offline. Free plan: 50 suggested words a day, no card.", url: LI + "7529482394270322689/" },
+  { date: "Nov 19, 2026", tag: "Milestone", title: "VoiceMods crossed 91 sign-ups this week", text: "90 of the 91 people joined in the last 7 days, and the biggest day brought 49 sign-ups. People have generated 1,70,325 characters of Hindi audio so far.", url: LI + "7529057086970937344/" },
   { date: "Nov 17, 2026", tag: "Launch", title: "I launched VoiceMods, a Hindi voiceover tool", text: "Paste a script, pick one of 13 Indian voices across 10 languages and download WAV, MP3 or OGG. The free plan gives 10,000 characters with no card. Next.js · Supabase · Gnani AI.", url: LI + "7528165880338206720/" },
   { date: "Nov 7, 2026", tag: "Launch", title: "Introducing LifeOS AI — your everyday life, smarter", text: "An offline-first Android super-app for tasks, reminders, expenses, notes and documents, with an AI assistant and a hands-free Hindi/English voice mode. Kotlin · Jetpack Compose · Firebase · Gemini.", url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7524803680622051328/" },
   { date: "Oct 29, 2026", tag: "Launch", title: "Introducing FileX — from idea to reality", text: "A desktop file conversion app for macOS and Windows: format conversion, batch conversion and offline, privacy-focused processing. Built and launched as Founder & Developer.", url: LI + "7521629144384954368/" },
@@ -512,7 +515,7 @@ $("#timeline").innerHTML = TIMELINE.map((t) => `
 // ---------- LinkedIn posts ----------
 if (POSTS.length) {
   $("#posts").hidden = false;
-  $("#contactNum").innerHTML = "08 <span>Contact</span>";
+  $("#contactNum").innerHTML = "09 <span>Contact</span>";
   document.querySelector('#nav a[data-sec="achievements"]').insertAdjacentHTML("afterend", '<a href="#posts" data-sec="posts">Posts</a>');
   $("#postGrid").innerHTML = POSTS.map((p) => `
     <a class="post reveal" href="${esc(p.url)}" target="_blank" rel="noopener">
