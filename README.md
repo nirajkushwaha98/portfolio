@@ -1,6 +1,6 @@
 # Niraj Kushwaha — Portfolio
 
-Personal portfolio of **Niraj Kushwaha**, Full Stack AI Developer · MCA (AI & ML) at Chandigarh University · founder of [FileX](https://filex.lol/).
+Personal portfolio of **Niraj Kushwaha**, Full Stack AI Developer · MCA (AI & ML) at Chandigarh University · founder of [VoiceMods](https://voicemods.lol/), developer of [TypeMind](https://typemind.lol/) and [FileX](https://filex.lol/).
 
 Plain HTML, CSS and JavaScript — no build step. Projects, skills, certifications and timeline live as data arrays at the top of `script.js`.
 
